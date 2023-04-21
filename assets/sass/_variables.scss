@@ -1,0 +1,84 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap';
+
+:root {
+    --neutral-grey: #5e5e5e;
+    --neutral-black: #1c1e21;
+    --neutral-white: #fbfbfb;
+    --background: #fcf5eb;
+    --c1: #128c7e;
+    --c1-light: #25d366;
+    --c1-dark: #075e54;
+    --c1-bg: #dcf8c6;
+    --size-radius: 12px;
+    --weight: 400;
+    --weight_bold: 700;
+}
+
+$neutral-grey: var(--neutral-grey);
+$neutral-black: var(--neutral-black);
+$neutral-white: var(--neutral-white);
+$background: var(--background);
+$c1: var(--c1);
+$c1-light: var(--c1-light);
+$c1-dark: var(--c1-dark);
+$c1-bg: var(--c1-bg);
+$size-radius: var(--size-radius);
+$weight: var(--weight);
+$weight_bold: var(--weight_bold);
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+input[type='checkbox']:focus-visible + label::before,
+input[type='radio']:focus-visible + label::before,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible,
+video:focus-visible[controls],
+audio:focus-visible[controls],
+[contenteditable]:not([contenteditable='false']):focus-visible,
+details:focus-visible,
+details > summary:first-of-type:focus-visible {
+    outline-style: solid;
+}
+
+a,
+button,
+input,
+input[type='checkbox'] + label::before,
+input[type='radio'] + label::before,
+select,
+textarea,
+[tabindex],
+video[controls],
+audio[controls],
+[contenteditable]:not([contenteditable='false']),
+details,
+details > summary:first-of-type {
+    outline-offset: 2px;
+    outline-width: 2px;
+    outline-color: $c1-dark;
+}
+
+.disabled {
+    display: none !important;
+}

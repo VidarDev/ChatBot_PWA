@@ -1,0 +1,26 @@
+#app {
+    button {
+        font-family: Poppins, sans-serif;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        background: $c1;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 4px 4px $c1-dark;
+        position: relative;
+        color: $neutral-white;
+        transform: translate(0, 0);
+        transition: background 0.4s ease-in, transform 0.4s ease-in,
+            box-shadow 0.4s ease-in;
+
+        &:hover {
+            box-shadow: 0 0 $c1-dark;
+            transition: background 0.4s ease-in, transform 0.4s ease-in,
+                box-shadow 0.4s ease-in;
+            transform: translate(4px, 4px);
+        }
+    }
+}

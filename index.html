@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="./manifest.json" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="Découvrez le chatbot de Théo Richier."
+        />
+        <meta
+            name="keywords"
+            content="chatbot, application, bot, designer, freelance, portfolio"
+        />
+        <meta name="author" content="Théo Richier" />
+        <title>Chat Bot</title>
+    </head>
+    <body id="app">
+        <header>
+            <h1>Chat Bot</h1>
+            <p class="description">The bot will not understand your answers</p>
+            <p>Made with JS Native</p>
+            <button id="reset-button">Reset localStorage</button>
+            <button id="notification-button">Enable notifications</button>
+        </header>
+        <main>
+            <section class="chat-header">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </section>
+            <section id="messages" class="chat-messages"></section>
+            <form id="chat-form" class="chat-form">
+                <div class="inputs-content">
+                    <input
+                        type="text"
+                        id="message-input"
+                        placeholder="Message"
+                        required
+                    />
+                </div>
+                <button type="submit" id="submit-button">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xml:space="preserve"
+                        fill-rule="evenodd"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        clip-rule="evenodd"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            fill="#fbfbfb"
+                            d="M6.042 17.958 12 12 6.042 6.042 12 .084 23.916 12 12 23.916l-5.958-5.958Z"
+                        />
+                    </svg>
+                </button>
+            </form>
+        </main>
+        <footer>©Richier Théo</footer>
+        <!-- <script src="./app.js" type="module"></script> -->
+        <script src="./app.js" type="module"></script>
+    </body>
+</html>

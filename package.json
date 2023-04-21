@@ -1,0 +1,17 @@
+{
+    "name": "budgeting_app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./assets/sass/theme.scss:./assets/css/style.css --style expanded",
+        "formatter": "stylelint \"**/*.scss\" --formatter verbose;stylelint \"**/*.scss\" --fix;sass --watch ./assets/sass/theme.scss:./assets/css/style.css --style expanded"
+    },
+    "author": "richier_théo",
+    "license": "ISC",
+    "devDependencies": {
+        "stylelint": "^15.5.0",
+        "stylelint-config-standard": "^33.0.0",
+        "stylelint-config-standard-scss": "^8.0.0"
+    }
+}
