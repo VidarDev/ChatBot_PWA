@@ -386,9 +386,20 @@ html body a:hover {
     border: none;
     border-radius: 0;
   }
+  #app main .chat-messages .bot-message-container .chat-bubble,
+  #app main .chat-messages .user-message-container .chat-bubble {
+    padding: 1rem 2rem;
+    max-width: 70%;
+  }
   #app main .chat-form {
     border: none;
     border-radius: 0;
+  }
+}
+@media screen and (width <= 512px) {
+  #app main .chat-messages .bot-message-container .chat-bubble,
+  #app main .chat-messages .user-message-container .chat-bubble {
+    max-width: 90%;
   }
 }
 

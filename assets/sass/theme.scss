@@ -254,11 +254,32 @@
             .chat-messages {
                 border: none;
                 border-radius: 0;
+
+                .bot-message-container,
+                .user-message-container {
+                    .chat-bubble {
+                        padding: 1rem 2rem;
+                        max-width: 70%;
+                    }
+                }
             }
 
             .chat-form {
                 border: none;
                 border-radius: 0;
+            }
+        }
+    }
+
+    @media screen and (width <= 512px) {
+        main {
+            .chat-messages {
+                .bot-message-container,
+                .user-message-container {
+                    .chat-bubble {
+                        max-width: 90%;
+                    }
+                }
             }
         }
     }
