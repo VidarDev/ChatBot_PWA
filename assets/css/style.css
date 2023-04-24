@@ -212,28 +212,49 @@ html body a:hover {
   border-radius: var(--size-radius) var(--size-radius) 0 0;
   flex: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+#app main .chat-header .buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+#app main .chat-header .buttons-container button:hover {
+  transform: translate(0, 0);
+}
+#app main .chat-header .buttons-container button svg {
+  fill: var(--neutral-white);
+  width: 20px;
+  height: 20px;
+}
+#app main .chat-header .dot-container {
+  flex: none;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 0.5rem;
 }
-#app main .chat-header .dot {
+#app main .chat-header .dot-container .dot {
   animation: grow 0.3s cubic-bezier(0.36, -0.04, 0.15, 1.64) 0.3s both;
-  margin: 9px 13.5px 9px 0;
+  margin: 9px 0 9px 13.5px;
   width: 9px;
   height: 9px;
   background: var(--neutral-white);
   border-radius: 50%;
   box-shadow: 3px 3px var(--neutral-grey);
 }
-#app main .chat-header .dot:last-of-type {
+#app main .chat-header .dot-container .dot:last-of-type {
   background-color: #fb6058;
   box-shadow: 3px 3px #ae423d;
 }
-#app main .chat-header .dot:nth-last-of-type(2) {
+#app main .chat-header .dot-container .dot:nth-last-of-type(2) {
   background-color: #fbbb31;
   box-shadow: 3px 3px #ae8222;
 }
-#app main .chat-header .dot:nth-last-child(3) {
+#app main .chat-header .dot-container .dot:nth-last-child(3) {
   background-color: #28c73f;
   box-shadow: 3px 3px #187a26;
 }

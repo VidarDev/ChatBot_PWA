@@ -53,33 +53,60 @@
             border-radius: $size-radius $size-radius 0 0;
             flex: none;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             padding: 0.5rem;
 
-            .dot {
-                animation: grow 0.3s cubic-bezier(0.36, -0.04, 0.15, 1.64) 0.3s
-                    both;
-                margin: 9px 13.5px 9px 0;
-                width: 9px;
-                height: 9px;
-                background: $neutral-white;
-                border-radius: 50%;
-                box-shadow: 3px 3px $neutral-grey;
+            .buttons-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: 0.5rem;
 
-                &:last-of-type {
-                    background-color: #fb6058;
-                    box-shadow: 3px 3px #ae423d;
+                button {
+                    &:hover {
+                        transform: translate(0, 0);
+                    }
+
+                    svg {
+                        fill: $neutral-white;
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
+            }
 
-                &:nth-last-of-type(2) {
-                    background-color: #fbbb31;
-                    box-shadow: 3px 3px #ae8222;
-                }
+            .dot-container {
+                flex: none;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0.5rem;
 
-                &:nth-last-child(3) {
-                    background-color: #28c73f;
-                    box-shadow: 3px 3px #187a26;
+                .dot {
+                    animation: grow 0.3s cubic-bezier(0.36, -0.04, 0.15, 1.64)
+                        0.3s both;
+                    margin: 9px 0 9px 13.5px;
+                    width: 9px;
+                    height: 9px;
+                    background: $neutral-white;
+                    border-radius: 50%;
+                    box-shadow: 3px 3px $neutral-grey;
+
+                    &:last-of-type {
+                        background-color: #fb6058;
+                        box-shadow: 3px 3px #ae423d;
+                    }
+
+                    &:nth-last-of-type(2) {
+                        background-color: #fbbb31;
+                        box-shadow: 3px 3px #ae8222;
+                    }
+
+                    &:nth-last-child(3) {
+                        background-color: #28c73f;
+                        box-shadow: 3px 3px #187a26;
+                    }
                 }
             }
         }
@@ -249,6 +276,9 @@
             .chat-header {
                 border: none;
                 border-radius: 0;
+
+                .dot-container {
+                }
             }
 
             .chat-messages {
