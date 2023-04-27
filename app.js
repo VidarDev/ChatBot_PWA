@@ -234,9 +234,20 @@ inputResetMobile.addEventListener('click', resetLocalStorage)
 inputNotification.addEventListener('click', () => {
     askNotificationPermission()
 })
-inputNotificationMobile.addEventListener('click', () => {
-    askNotificationPermission()
-})
+inputNotificationMobile.addEventListener(
+    'click',
+    () => {
+        askNotificationPermission()
+        Notification.requestPermission().then((perm) => {
+            if (perm === 'granted') {
+                new Notification('Bonjour', {
+                    body: 'Bienvenue sur le ChatBot :)',
+                })
+            }
+        })
+    },
+    false
+)
 
 // ============================================================================
 // Lance la fonction une fois la page entièrement chargée
